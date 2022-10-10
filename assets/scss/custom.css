@@ -11511,4 +11511,8 @@ p {
 
 .home__card-description {
   font-size: 0.75em;
+}
+
+.navbar {
+  --bs-navbar-padding-y: 1.5rem;
 }/*# sourceMappingURL=custom.css.map */
