@@ -9,7 +9,7 @@ window.addEventListener('scroll', scrollHeader)
 
 /*=============== SWIPER ===============*/
 
-const swiper = new Swiper(".mySwiper", {
+const DestinationSwiper = new Swiper(".destination-swiper", {
     spaceBetween: 0,
     grabCursor: true,
     loop: true,
@@ -31,4 +31,28 @@ const swiper = new Swiper(".mySwiper", {
           spaceBetween: 10,
         },
       },
+});
+
+const tourSwiper = new Swiper(".tour-swiper", {
+  spaceBetween: 0,
+  grabCursor: true,
+  loop: true,
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  },
+  breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 5,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 7,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+    },
 });
