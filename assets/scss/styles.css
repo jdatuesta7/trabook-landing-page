@@ -11806,6 +11806,15 @@ button.swiper-pagination-bullet {
   display: none;
 }
 
+.swiper-cards {
+  overflow: visible;
+}
+.swiper-cards .swiper-slide {
+  transform-origin: center bottom;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
 /*=============== GOOGLE FONTS ===============*/
 /*=============== CUSTOM VARIABLES ===============*/
 :root {
@@ -11952,4 +11961,22 @@ p {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.testimonials__autor {
+  font-size: 1.125em;
+}
+
+.testimonals__place {
+  color: #666666;
+}
+
+.testimonials__card {
+  border-radius: 10px;
+  box-shadow: none;
+  width: 520px !important;
+}
+
+#testimonials > .card-body {
+  border-radius: 10px;
 }/*# sourceMappingURL=styles.css.map */

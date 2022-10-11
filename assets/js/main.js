@@ -56,3 +56,8 @@ const tourSwiper = new Swiper(".tour-swiper", {
       },
     },
 });
+
+const testimonialsSwiper = new Swiper(".swiper-testimonials", {
+  effect: "cards",
+  grabCursor: true,
+});
