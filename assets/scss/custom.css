@@ -11480,7 +11480,24 @@ p {
   color: #444444;
 }
 
+.card {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 14px 24px 72px rgba(102, 102, 102, 0.1);
+  border-radius: 8px;
+}
+
+/*--=============== HEADER ===============--*/
+.scroll-header {
+  box-shadow: 0 2px 4px hsla(0deg, 0%, 1%, 0.1);
+}
+
 /*=============== SECTION HOME ===============*/
+.home__container {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
 .home__tourist-img {
   width: 85%;
   z-index: 100;
@@ -11505,6 +11522,10 @@ p {
   border-radius: 10px;
 }
 
+.home__title {
+  font-size: 4rem;
+}
+
 .home__description {
   font-size: 1.25em;
 }
@@ -11515,4 +11536,18 @@ p {
 
 .navbar {
   --bs-navbar-padding-y: 1.5rem;
+}
+
+/*=============== SECTION ABOUT ===============*/
+.about__container {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.about__title {
+  font-size: 3em;
+}
+
+.about__description {
+  font-size: 1.125em;
 }/*# sourceMappingURL=custom.css.map */

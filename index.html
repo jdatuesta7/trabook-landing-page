@@ -15,7 +15,7 @@
 <body class="bg-light">
     <!--=============== HEADER ===============-->
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav id="navbar" class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/Logo.png" alt="logo">
@@ -57,13 +57,13 @@
     <main>
         <!--=============== HOME ===============-->
         <section id="home" class="bg-light">
-            <div class="container mb-5">
-                <div class="grid text-center mt-4">
+            <div class="container home__container">
+                <div class="grid text-center">
                     <div class="g-col-12 g-col-md-6 mt-5">
-                        <h1 class="main-fm text-start" style="font-size: 4rem;">Get started your exciting <span
+                        <h1 class="main-fm text-start home__title">Get started your exciting <span
                                 class="text-primary">journey</span> with us.
                         </h1>
-                        <p class="fs-5 text-start mt-4 home__description">
+                        <p class="text-start mt-4 home__description">
                             A Team of experienced tourism professionals will provide you with the best advice and tips
                             for
                             your desire place.
@@ -77,16 +77,16 @@
 
                     <div class="g-col-12 g-col-md-6 g-start-md-8 bg-primary home__elipse">
                         <div class="home__square-white bg-light"></div>
-                        <img class="home__tourist-img" src="assets/img/tourist-with-thumb-up__1_-removebg 1.png"
-                            alt="tourist">
+                        <img class="home__tourist-img" src="assets/img/tourist.png" alt="tourist">
                     </div>
                 </div>
-                <div class="grid text-center mt-4">
+                <div class="grid text-center">
                     <div class="g-col-8 g-start-3 home__card bg-white mt-4 p-5">
                         <div class="grid text-center" style="--bs-columns: 4; --bs-gap: 4.6rem;">
                             <div>
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle bg-light text-black fw-bold border-0"
+                                    <button
+                                        class="btn btn-secondary dropdown-toggle bg-light text-black fw-bold border-0"
                                         type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Location
                                     </button>
@@ -98,7 +98,8 @@
                             </div>
                             <div>
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle bg-light text-black fw-bold border-0"
+                                    <button
+                                        class="btn btn-secondary dropdown-toggle bg-light text-black fw-bold border-0"
                                         type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Date
                                     </button>
@@ -110,7 +111,8 @@
                             </div>
                             <div>
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle bg-light text-black fw-bold border-0"
+                                    <button
+                                        class="btn btn-secondary dropdown-toggle bg-light text-black fw-bold border-0"
                                         type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Guest
                                     </button>
@@ -121,7 +123,8 @@
                                 <p class="home__card-description">Number of guest</p>
                             </div>
                             <div>
-                                <button class="btn btn-primary text-white fw-normal px-4 py-3 text-nowrap">Explore Now</button>
+                                <button class="btn btn-primary text-white fw-normal px-4 py-3 text-nowrap">Explore
+                                    Now</button>
                             </div>
                         </div>
                     </div>
@@ -129,12 +132,57 @@
             </div>
         </section>
 
-        <section class="bg-light-alt">
-            <div class="container mb-5">
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consequatur eveniet fuga velit
-                    vero, doloremque vitae ducimus! Amet maiores aliquam, labore porro qui veniam est excepturi, ipsa
-                    architecto, tempore necessitatibus.
+        <!--=============== ABOUT ===============-->
+        <section id="about" class="bg-light-alt">
+            <div class="container about__container">
+                <div class="grid text-center">
+                    <div class="g-col-6 g-start-4">
+                        <h1 class="main-fm about__title">Things you need <span class="text-primary">to do</span>
+                        </h1>
+                        <p class="about__description mt-4">
+                            We ensure that you'll embark on a perfectly planned, safe vacation at a price you can
+                            afford.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid text-center mt-5">
+                    <div class="g-col-4 bg-white">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="ps-4 text-start">
+                                    <img class="pb-5 pt-4" src="assets/img/panel.png" alt="">
+                                    <h4 class="fw-semibold text-start mb-3">Sign up</h4>
+                                    <p class="text-start">Completes all the work associated with planning and processing
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g-col-4 bg-white">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="ps-4 text-start">
+                                    <img class="pb-5 pt-4" src="assets/img/wallet.png" alt="">
+                                    <h4 class="fw-semibold text-start mb-3">Worth of Money</h4>
+                                    <p class="text-start">After successful access then book from exclusive deals &
+                                        pricing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g-col-4 bg-white">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="ps-4 text-start">
+                                    <img class="pb-5 pt-4" src="assets/img/location.png" alt="">
+                                    <h4 class="fw-semibold text-start mb-3">Exciting Travel</h4>
+                                    <p class="text-start">Start and explore a wide range of exciting travel
+                                        experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -151,6 +199,9 @@
 
     <!--=============== BOOTSTRAP ===============-->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

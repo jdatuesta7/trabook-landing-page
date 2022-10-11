@@ -11,10 +11,10 @@
     --main-font: 'Volkhov', serif;
 }
 
-$primary:  #FA7436 !default;
-$white:    #FFFFFF !default;
-$light:    #FEFCFB !default;
-$light-alt:#F7F8FC !default;
+$primary: #FA7436 !default;
+$white: #FFFFFF !default;
+$light: #FEFCFB !default;
+$light-alt: #F7F8FC !default;
 
 /*=============== BASE ===============*/
 body {
@@ -34,7 +34,24 @@ p {
     color: #444444;
 }
 
+.card {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 14px 24px 72px rgba(102, 102, 102, 0.1);
+    border-radius: 8px;
+}
+
+/*--=============== HEADER ===============--*/
+.scroll-header {
+    box-shadow: 0 2px 4px hsl(0deg 0% 1% / 10%);
+}
+
 /*=============== SECTION HOME ===============*/
+.home__container {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
 .home__tourist-img {
     width: 85%;
     z-index: 100;
@@ -47,7 +64,7 @@ p {
     height: 30rem;
 }
 
-.home__square-white{
+.home__square-white {
     z-index: -1;
     position: absolute;
     width: 30rem;
@@ -57,6 +74,10 @@ p {
 .home__card {
     box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
+}
+
+.home__title {
+    font-size: 4rem;
 }
 
 .home__description {
@@ -69,4 +90,18 @@ p {
 
 .navbar {
     --bs-navbar-padding-y: 1.5rem;
+}
+
+/*=============== SECTION ABOUT ===============*/
+.about__container {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.about__title {
+    font-size: 3em;
+}
+
+.about__description {
+    font-size: 1.125em;
 }
