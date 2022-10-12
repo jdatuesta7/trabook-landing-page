@@ -179,3 +179,17 @@ p {
 #testimonials > .card-body {
     border-radius: 10px;
 }
+
+/*=============== SECTION BLOG ===============*/
+.blog__card-title {
+    font-size: 1.125em;
+}
+
+.blog__card {
+    border: 2px solid rgba(102, 102, 102, 0.08);
+    box-shadow: none;
+}
+
+.blog__card:hover {
+    box-shadow: 0px 16px 80px rgba(254, 147, 94, 0.2);
+}

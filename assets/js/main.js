@@ -9,7 +9,7 @@ window.addEventListener('scroll', scrollHeader)
 
 /*=============== SWIPER ===============*/
 
-const DestinationSwiper = new Swiper(".destination-swiper", {
+const mySwiper = new Swiper(".my-swiper", {
     spaceBetween: 0,
     grabCursor: true,
     loop: true,
