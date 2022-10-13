@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon.png">
 
     <!--=============== STYLES ===============-->
     <link rel="stylesheet" href="assets/scss/styles.css">
@@ -17,7 +18,7 @@
     <header>
         <nav id="navbar" class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand ps-2 ps-lg-0" href="#">
                     <img src="assets/img/Logo.png" alt="logo">
                 </a>
 
@@ -42,10 +43,21 @@
                         <li class="nav-item px-2">
                             <a class="nav-link link-primary fw-semibold text-black" href="#blog">Blog</a>
                         </li>
+                        <div class="navbar-collapse-auth">
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-primary text-decoration-none fw-semibold link-primary"
+                                    href="#">Login</a>
+                            </li>
+                        </div>
+                        <div class="navbar-collapse-auth">
+                            <li class="nav-item px-2">
+                                <button class="btn btn-primary text-white fw-semibold px-5 py-2">Sign up</button>
+                            </li>
+                        </div>
                     </ul>
                 </div>
 
-                <div>
+                <div class="navbar-auth">
                     <a class="text-primary text-decoration-none fw-semibold px-5 link-primary" href="#">Login</a>
                     <button class="btn btn-primary text-white fw-semibold px-5 py-2">Sign up</button>
                 </div>
@@ -59,7 +71,7 @@
         <section id="home" class="bg-light">
             <div class="container section__container">
                 <div class="grid text-center">
-                    <div class="g-col-12 g-col-md-6 mt-5">
+                    <div class="g-col-12 g-col-md-12 g-col-lg-6 mt-5">
                         <h1 class="main-fm text-start home__title">Get started your exciting <span
                                 class="text-primary">journey</span> with us.
                         </h1>
@@ -75,15 +87,16 @@
                         </div>
                     </div>
 
-                    <div class="g-col-12 g-col-md-6 g-start-md-8 bg-primary home__elipse">
+                    <div class="g-col-12 g-col-md-12 g-col-lg-12 g-start-md-3 g-start-lg-8 bg-primary home__elipse">
                         <div class="home__square-white bg-light"></div>
                         <img class="home__tourist-img" src="assets/img/tourist.png" alt="tourist">
                     </div>
                 </div>
                 <div class="grid text-center">
-                    <div class="g-col-8 g-start-3 home__card bg-white mt-4 p-5">
-                        <div class="grid text-center" style="--bs-columns: 4; --bs-gap: 4.6rem;">
-                            <div>
+                    <div
+                        class="g-col-12 g-col-md-12 g-col-lg-10 g-col-xl-8 g-start-lg-2 g-start-xl-3 home__card bg-white mt-4 p-2 p-md-5">
+                        <div class="grid text-center">
+                            <div class="g-col-12 g-col-sm-4 g-col-md-3">
                                 <div class="dropdown">
                                     <button
                                         class="btn btn-secondary dropdown-toggle bg-light text-black fw-bold border-0"
@@ -96,7 +109,7 @@
                                 </div>
                                 <p class="home__card-description">Where are you going</p>
                             </div>
-                            <div>
+                            <div class="g-col-12 g-col-sm-4 g-col-md-3">
                                 <div class="dropdown">
                                     <button
                                         class="btn btn-secondary dropdown-toggle bg-light text-black fw-bold border-0"
@@ -109,7 +122,7 @@
                                 </div>
                                 <p class="home__card-description">When you will go</p>
                             </div>
-                            <div>
+                            <div class="g-col-12 g-col-sm-4 g-col-md-3">
                                 <div class="dropdown">
                                     <button
                                         class="btn btn-secondary dropdown-toggle bg-light text-black fw-bold border-0"
@@ -122,7 +135,7 @@
                                 </div>
                                 <p class="home__card-description">Number of guest</p>
                             </div>
-                            <div>
+                            <div class="g-col-12 g-col-md-3">
                                 <button class="btn btn-primary text-white fw-normal px-4 py-3 text-nowrap">Explore
                                     Now</button>
                             </div>
@@ -136,7 +149,7 @@
         <section id="about" class="bg-light-alt">
             <div class="container section__container">
                 <div class="grid text-center">
-                    <div class="g-col-6 g-start-4">
+                    <div class="g-col-12 g-col-md-10 g-col-lg-8 g-col-xl-6 g-start-md-2 g-start-lg-3 g-start-xl-4">
                         <h1 class="main-fm section__title">Things you need <span class="text-primary">to do</span>
                         </h1>
                         <p class="section__description mt-4">
@@ -146,19 +159,19 @@
                     </div>
                 </div>
                 <div class="grid text-center mt-5">
-                    <div class="g-col-4 bg-white">
+                    <div class="g-col-12 g-col-md-4 g-col-lg-4">
                         <div class="card">
                             <div class="card-body">
                                 <div class="ps-4 text-start">
                                     <img class="pb-5 pt-4" src="assets/img/panel.png" alt="">
-                                    <h4 class="fw-semibold text-start mb-3">Sign up</h4>
+                                    <h4 class="fw-semibold text-start mb-3 pb-4 pb-lg-0">Sign up</h4>
                                     <p class="text-start">Completes all the work associated with planning and processing
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="g-col-4 bg-white">
+                    <div class="g-col-12 g-col-md-4 g-col-lg-4">
                         <div class="card">
                             <div class="card-body">
                                 <div class="ps-4 text-start">
@@ -170,7 +183,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="g-col-4 bg-white">
+                    <div class="g-col-12 g-col-md-4 g-col-lg-4">
                         <div class="card">
                             <div class="card-body">
                                 <div class="ps-4 text-start">
@@ -191,7 +204,7 @@
         <section id="destination" class="bg-light">
             <div class="container section__container">
                 <div class="grid text-center mb-5">
-                    <div class="g-col-8 g-start-3">
+                    <div class="g-col-12 g-col-md-8 g-col-xl-8 g-start-md-3 g-start-xl-3">
                         <h1 class="main-fm section__title">Exclusive <span class="text-primary">deals & discounts</span>
                         </h1>
                         <p class="section__description text-wrap mt-4">Discover our fantastic early booking discounts
@@ -397,12 +410,11 @@
         <section id="tour" class="bg-light">
             <div class="container section__container">
                 <div class="grid text-center mb-5">
-                    <div class="g-col-8 g-start-3">
+                    <div class="g-col-12 g-col-md-8 g-col-lg-8 g-start-md-3 g-start-lg-3">
                         <h1 class="main-fm section__title">Best <span class="text-primary">vacation plan</span>
                         </h1>
                         <p class="section__description text-wrap mt-4">Plan your perfect vacation with our travel
-                            agency.
-                            Choose <br> among hundreds of all-inclusive offers!</p>
+                            agency. Choose among hundreds of all-inclusive offers!</p>
                     </div>
                 </div>
 
@@ -457,7 +469,7 @@
                                     <div class="card-title">
                                         <div class="row">
                                             <div class="col">
-                                                <h4 class="text-start fw-semibold">Osaka, Japan</h4>
+                                                <h4 class="text-start text-nowrap fw-semibold">Osaka, Japan</h4>
                                             </div>
                                             <div class="col text-end">
                                                 <h4 class="text-primary fw-semibold">$5,42k</h4>
@@ -502,15 +514,14 @@
         <section id="testimonials" class="bg-light-alt">
             <div class="container section__container">
                 <div class="grid text-center mb-5">
-                    <div class="g-col-6">
+                    <div class="g-col-12 g-col-md-7 g-col-lg-6 g-col-xl-5">
                         <h1 class="main-fm section__title text-start">What people say <br><span
-                                class="text-primary">about
-                                Us.</span>
+                                class="text-primary">about Us.</span>
                         </h1>
                         <p class="section__description text-start mt-4">Our Clients send us bunch of smilies with our
-                            services <br> and we love them.</p>
+                            services and we love them.</p>
                     </div>
-                    <div class="g-col-6">
+                    <div class="g-col-12 g-col-md-5 g-col-lg-6 g-col-xl-5 g-start-xl-7 mx-4 mx-md-0">
                         <div class="swiper swiper-testimonials">
                             <div class="swiper-wrapper">
                                 <div class="card testimonials__card swiper-slide py-3">
@@ -554,7 +565,7 @@
         <section id="blog" class="bg-light">
             <div class="container section__container">
                 <div class="grid text-center mb-5">
-                    <div class="g-col-8 g-start-3">
+                    <div class="g-col-12 g-col-md-8 g-start-md-3">
                         <h1 class="main-fm section__title">Get update with <span class="text-primary">latest blog</span>
                         </h1>
                     </div>
@@ -616,7 +627,7 @@
             </div>
 
             <!--=============== NEWSLETTER ===============-->
-            <div class="container newsletter__container bg-primary rounded-3 card">
+            <div class="container newsletter__container bg-primary rounded-3 card px-0">
                 <div class="card-body mt-5">
                     <div class="grid text-center">
                         <div class="g-col-12 mb-4">
@@ -625,7 +636,7 @@
                         </div>
                         <div class="g-col-12 text-center">
                             <div class="grid">
-                                <div class="g-col-6 g-start-4">
+                                <div class="g-col-12 g-col-md-6 g-start-md-4">
                                     <div class="input-group mb-3">
                                         <input type="text" class="form-control p-3" placeholder="Enter your email"
                                             aria-label="Recipient's username" aria-describedby="button-addon2">
@@ -645,14 +656,14 @@
     <footer class="bg-light-alt">
         <div class="container footer__container">
             <div class="grid mb-5">
-                <div class="g-col-5">
+                <div class="g-col-12 g-col-md-5">
                     <div class="grid">
-                        <img class="g-col-12" src="assets/img/Logo.png" alt="logo">
-                        <p class="g-col-6">Book your trip in minute, get full
+                        <img class="g-col-8 g-col-md-12 g-start-4" src="assets/img/Logo.png" alt="logo">
+                        <p class="g-col-12 g-col-md-6">Book your trip in minute, get full
                             Control for much longer.</p>
-                        <div class="g-col-12">
+                        <div class="g-col-12 g-col-md-12">
                             <div class="grid">
-                                <div class="g-col-2">
+                                <div class="g-col-4 g-col-md-2">
                                     <a href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-brand-facebook bg-white rounded-circle footer__social-icons p-2"
@@ -664,7 +675,7 @@
                                         </svg>
                                     </a>
                                 </div>
-                                <div class="g-col-2">
+                                <div class="g-col-4 g-col-md-2">
                                     <a href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-brand-instagram bg-primary rounded-circle footer__social-icons p-2"
@@ -677,7 +688,7 @@
                                         </svg>
                                     </a>
                                 </div>
-                                <div class="g-col-2">
+                                <div class="g-col-4 g-col-md-2">
                                     <a href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-brand-twitter bg-white rounded-circle footer__social-icons p-2"
@@ -693,7 +704,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="g-col-3">
+                <div class="g-col-6 g-col-md-3">
                     <div class="grid">
                         <span class="g-col-12 footer__nav-links fw-semibold">Company</span>
                         <a href="#" class="g-col-12 footer__nav-links text-decoration-none text-black-6">About</a>
@@ -703,7 +714,7 @@
                             Policy</a>
                     </div>
                 </div>
-                <div class="g-col-2">
+                <div class="g-col-6 g-col-md-2">
                     <div class="grid">
                         <span class="g-col-12 footer__nav-links fw-semibold">Contact</span>
                         <a href="#" class="g-col-12 footer__nav-links text-decoration-none text-black-6">Help/FAQ</a>
@@ -711,9 +722,9 @@
                         <a href="#" class="g-col-12 footer__nav-links text-decoration-none text-black-6">Affilates</a>
                     </div>
                 </div>
-                <div class="g-col-2">
+                <div class="g-col-6 g-col-md-2">
                     <div class="grid">
-                        <span class="g-col-12 footer__nav-links fw-semibold">Contact</span>
+                        <span class="g-col-12 footer__nav-links fw-semibold">More</span>
                         <a href="#" class="g-col-12 footer__nav-links text-decoration-none text-black-6">Press
                             Centre</a>
                         <a href="#" class="g-col-12 footer__nav-links text-decoration-none text-black-6">Our Blog</a>
@@ -722,15 +733,13 @@
                     </div>
                 </div>
             </div>
-
             <hr>
-
             <div class="row mt-5">
-                <div class="col-6">
+                <div class="g-col-12 col-md-6">
                     <p class="text-start">&#169; Copyright, Trabook 2022. All rights reserved.</p>
                 </div>
-                <div class="col-6">
-                    <p class="text-end">
+                <div class="g-col-12 col-md-6">
+                    <p class="text-start text-md-end">
                         <a href="#" class="footer__nav-links text-decoration-none text-black-6">
                             Terms & Conditions
                         </a>

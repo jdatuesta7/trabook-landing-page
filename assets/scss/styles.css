@@ -11869,6 +11869,15 @@ p {
   font-size: 1.125em;
 }
 
+@media screen and (max-width: 767px) {
+  .section__container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .section__title {
+    font-size: 2.5em;
+  }
+}
 /*--=============== HEADER ===============--*/
 .scroll-header {
   box-shadow: 0 2px 4px hsla(0deg, 0%, 1%, 0.1);
@@ -11878,6 +11887,16 @@ p {
   --bs-navbar-padding-y: 1.5rem;
 }
 
+@media screen and (max-width: 991px) {
+  .navbar-auth {
+    display: none;
+  }
+}
+@media screen and (min-width: 991px) {
+  .navbar-collapse-auth {
+    display: none;
+  }
+}
 /*=============== SECTION HOME ===============*/
 .home__tourist-img {
   width: 85%;
@@ -11904,17 +11923,36 @@ p {
 }
 
 .home__title {
-  font-size: 4rem;
+  font-size: 3em;
 }
 
 .home__description {
-  font-size: 1.25em;
+  font-size: 1em;
 }
 
 .home__card-description {
   font-size: 0.75em;
 }
 
+@media screen and (min-width: 991px) {
+  .home__title {
+    font-size: 4em;
+  }
+  .home__description {
+    font-size: 1.25em;
+  }
+}
+@media screen and (max-width: 520px) {
+  .home__square-white {
+    width: 19rem;
+    height: 9rem;
+  }
+  .home__elipse {
+    width: 18rem;
+    height: 18rem;
+    justify-self: center;
+  }
+}
 /*=============== SECTION DESTINATION ===============*/
 .destination__hover {
   position: absolute;
@@ -11978,7 +12016,6 @@ p {
 .testimonials__card {
   border-radius: 10px;
   box-shadow: none;
-  width: 520px !important;
 }
 
 #testimonials > .card-body {
@@ -12010,6 +12047,16 @@ p {
   height: 350px;
 }
 
+@media screen and (max-width: 767px) {
+  .newsletter__container {
+    top: 12rem;
+    height: 480px;
+    width: 95%;
+  }
+  #blog > .section__container {
+    padding-bottom: 0rem;
+  }
+}
 /*=============== FOOTER ===============*/
 .footer__container {
   padding-top: 18rem;
