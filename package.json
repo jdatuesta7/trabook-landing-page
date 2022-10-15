@@ -1,7 +1,5 @@
 {
   "scripts": {
-    "build": "npm install",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d ."
   },
   "homepage": "https://jdatuesta7.github.io/trabook-landing-page",
