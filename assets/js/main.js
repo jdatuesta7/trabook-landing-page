@@ -1,4 +1,4 @@
-import Swiper from '../../../node_modules/swiper/swiper-bundle.esm.browser.min.js';
+import Swiper from '../../node_modules/swiper/swiper-bundle.esm.browser.min.js';
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
