@@ -1,4 +1,22 @@
 /*=============== BOOTSTRAP ===============*/
+// Enable CSS-Grid classes
+$enable-cssgrid: true !default;
+
+// scss-docs-start theme-color-variables
+$primary: #FA7436 !default;
+$white: #FFFFFF !default;
+$light: #FEFCFB !default;
+$light-alt: #F7F8FC !default;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "light":      $light,
+  "light-alt":  $light-alt,
+) !default;
+// scss-docs-end theme-colors-map
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 /*=============== SWIPER ===============*/
@@ -18,12 +36,6 @@
     --main-font: 'Volkhov', serif;
     --swiper-theme-color: #FA7436;
 }
-
-$primary: #FA7436 !default;
-$white: #FFFFFF !default;
-$light: #FEFCFB !default;
-$light-alt: #F7F8FC !default;
-
 
 /*=============== BASE ===============*/
 body {
@@ -94,6 +106,12 @@ p {
     .navbar-auth {
         display: none;
     }
+
+    .navbar {
+        margin: 0 1rem;
+        --bs-navbar-padding-y: 0.5rem;
+        --bs-navbar-padding-x: 1rem !important;
+    }
 }
 
 @media screen and (min-width: 991px) {
@@ -151,7 +169,7 @@ p {
 
 @media screen and (max-width: 520px) {
     .home__square-white {
-        width: 19rem;
+        width: 18rem;
         height: 9rem;
     }
 
