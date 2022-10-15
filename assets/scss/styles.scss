@@ -1,0 +1,284 @@
+/*=============== BOOTSTRAP ===============*/
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/*=============== SWIPER ===============*/
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/pagination/pagination.scss";
+@import "../../node_modules/swiper/modules/effect-cards/effect-cards.scss";
+
+
+
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap');
+
+/*=============== CUSTOM VARIABLES ===============*/
+:root {
+    --body-font: 'Poppins', sans-serif;
+    --main-font: 'Volkhov', serif;
+    --swiper-theme-color: #FA7436;
+}
+
+$primary: #FA7436 !default;
+$white: #FFFFFF !default;
+$light: #FEFCFB !default;
+$light-alt: #F7F8FC !default;
+
+
+/*=============== BASE ===============*/
+body {
+    font-family: var(--body-font);
+}
+
+p {
+    color: #666666;
+}
+
+/*--=============== REUSABLE CSS CLASSES ===============--*/
+.main-fm {
+    font-family: var(--main-font);
+}
+
+.text-black-6 {
+    color: #666666;
+}
+
+.text-black-4 {
+    color: #444444;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 14px 24px 72px rgba(102, 102, 102, 0.1);
+}
+
+.section__container {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.swiper {
+    width: auto;
+    height: auto;
+}
+
+.section__title {
+    font-size: 3em;
+}
+
+.section__description {
+    font-size: 1.125em;
+}
+
+@media screen and (max-width: 767px) {
+    .section__container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .section__title {
+        font-size: 2.5em;
+    }
+}
+/*--=============== HEADER ===============--*/
+.scroll-header {
+    box-shadow: 0 2px 4px hsl(0deg 0% 1% / 10%);
+}
+
+.navbar {
+    --bs-navbar-padding-y: 1.5rem;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-auth {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .navbar-collapse-auth {
+        display: none;
+    }
+}
+
+/*=============== SECTION HOME ===============*/
+.home__tourist-img {
+    width: 85%;
+    z-index: 100;
+}
+
+.home__elipse {
+    z-index: 0;
+    border-radius: 50%;
+    width: 30rem;
+    height: 30rem;
+}
+
+.home__square-white {
+    z-index: -1;
+    position: absolute;
+    width: 30rem;
+    height: 15rem;
+}
+
+.home__card {
+    box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+}
+
+.home__title {
+    font-size: 3em;
+}
+
+.home__description {
+    font-size: 1em;
+}
+
+.home__card-description {
+    font-size: 0.75em;
+}
+
+@media screen and (min-width: 991px) {
+    .home__title {
+        font-size: 4em;
+    }
+
+    .home__description {
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .home__square-white {
+        width: 19rem;
+        height: 9rem;
+    }
+
+    .home__elipse {
+        width: 18rem;
+        height: 18rem;
+        justify-self: center;
+    }
+}
+
+/*=============== SECTION DESTINATION ===============*/
+.destination__hover {
+    position: absolute;
+    z-index: 5;
+    display: none;
+}
+
+.destination__card:hover .destination__hover {
+    display: block;
+}
+
+.destination__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destination__card {
+    border: 2px solid rgba(102, 102, 102, 0.08);
+    box-shadow: none;
+}
+
+.destination__card:hover {
+    box-shadow: 0px 16px 80px rgba(254, 147, 94, 0.2);
+}
+
+/*=============== SECTION TOUR ===============*/
+#tour > .swiper {
+    width: 100px;
+    height: auto;
+}
+
+.tour__card {
+    border: 2px solid rgba(102, 102, 102, 0.08);
+    border-radius: 16px;
+    box-shadow: none;
+}
+
+.tour__card:hover {
+    box-shadow: 0px 16px 80px rgba(254, 147, 94, 0.2);
+}
+
+.tour__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonials__autor {
+    font-size: 1.125em;
+}
+
+.testimonals__place {
+    color: #666666;
+}
+
+.testimonials__card {
+    border-radius: 10px;
+    box-shadow: none;
+    // width: 520px !important;
+}
+
+#testimonials > .card-body {
+    border-radius: 10px;
+}
+
+/*=============== SECTION BLOG ===============*/
+.blog__card-title {
+    font-size: 1.125em;
+}
+
+.blog__card {
+    border: 2px solid rgba(102, 102, 102, 0.08);
+    box-shadow: none;
+}
+
+.blog__card:hover {
+    box-shadow: 0px 16px 80px rgba(254, 147, 94, 0.2);
+}
+
+#blog > .section__container {
+    padding-bottom: 4rem;
+}
+
+/*=============== NEWSLETTER ===============*/
+.newsletter__container {
+    position: relative;
+    top: 11rem;
+    height: 350px;
+    // left: 16vh;
+}
+
+@media screen and (max-width: 767px) {
+    .newsletter__container {
+        top: 12rem;
+        height: 480px;
+        width: 95%;
+        // left: 0;
+    }
+
+    #blog > .section__container {
+        padding-bottom: 0rem;
+    }
+}
+
+/*=============== FOOTER ===============*/
+.footer__container {
+    padding-top: 18rem;
+    padding-bottom: 4rem;
+}
+
+.footer__nav-links {
+    font-size: 1.125em;
+}
+
+.footer__social-icons {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
